@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact us — Parker 101 Watches</title>
+<meta name="description" content="Ask about a watch, book a service or say hello.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23e7c76a'/%3E%3Ccircle cx='16' cy='16' r='10' fill='%23b1263b'/%3E%3Ccircle cx='12.5' cy='12.5' r='3' fill='%23ff8a98'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="jewel" aria-hidden="true"></span>Parker 101</a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html">About us</a>
+      <a href="showcase.html">Showcase</a>
+      <a href="contact.html" aria-current="page">Contact us</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <div class="wrap">
+    <div class="contact">
+      <section aria-labelledby="top">
+        <h1 id="top">Contact us</h1>
+        <p class="lede">Ask about a watch, book a service or just say hello. We reply within two working days.</p>
+        <!-- PLACEHOLDERS: replace these three details. -->
+        <dl class="details">
+          <div><dt>Email</dt><dd>hello@example.com</dd></div>
+          <div><dt>Phone</dt><dd>+1 (000) 000-0000</dd></div>
+          <div><dt>Workshop</dt><dd>Street address, City, Country</dd></div>
+        </dl>
+      </section>
+
+      <section aria-label="Send us a message">
+        <!-- EMAIL SETUP: paste your free Web3Forms access key as the value of the first hidden input below.
+             Get one at https://web3forms.com (enter the email address that should receive the messages). -->
+        <form id="contact-form" class="form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="PASTE-YOUR-WEB3FORMS-ACCESS-KEY-HERE">
+          <input type="hidden" name="subject" value="New enquiry from the website">
+          <input type="hidden" name="from_name" value="Parker 101 website">
+          <div class="hp" aria-hidden="true"><label>Leave this box empty <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off"></label></div>
+
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="phone">Phone number <span class="hint">(optional)</span></label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" pattern="[0-9 +\(\)\.\-]{7,20}" title="Digits, spaces and + ( ) . - only">
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required minlength="10"></textarea>
+          </div>
+          <button class="btn" type="submit">Send message</button>
+          <p id="form-status" class="status" role="status" aria-live="polite"></p>
+        </form>
+
+        <div id="sent" class="sent" hidden tabindex="-1">
+          <h2>Message sent</h2>
+          <p>Thank you. We will reply to <strong id="sent-email"></strong> within two working days.</p>
+        </div>
+      </section>
+    </div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; 2026 Parker 101 Watches</p>
+    <nav class="nav" aria-label="Footer">
+      <a href="index.html">About us</a>
+      <a href="showcase.html">Showcase</a>
+      <a href="contact.html">Contact us</a>
+    </nav>
+  </div>
+</footer>
+<script src="assets/js/contact.js" defer></script>
+</body>
+</html>
